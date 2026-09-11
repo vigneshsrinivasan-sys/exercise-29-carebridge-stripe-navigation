@@ -1,0 +1,2621 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CareBridge Navigation Bar</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/6017db9c35.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/@lottiefiles/dotlottie-wc@latest/dist/dotlottie-wc.js"
+      type="module"
+    ></script>
+  </head>
+  <body>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <div class="nav-shell u-gap-32">
+        <a class="nav-brand" href="">
+          <svg
+            class="nav-brand-logo ds-text-default"
+            width="132"
+            height="28"
+            viewBox="0 0 132 28"
+            fill="none"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14 3.5C8.2 3.5 3.5 8.2 3.5 14C3.5 19.8 8.2 24.5 14 24.5C19.8 24.5 24.5 19.8 24.5 14"
+              stroke="currentColor"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+
+            <path
+              d="M14 8.5C10.95 8.5 8.5 10.95 8.5 14C8.5 17.05 10.95 19.5 14 19.5C17.05 19.5 19.5 17.05 19.5 14"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+            />
+
+            <path
+              d="M18.5 8L22.5 4M22.5 4V9M22.5 4H17.5"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+
+            <text
+              x="34"
+              y="20"
+              fill="currentColor"
+              font-family="Roboto, Arial, sans-serif"
+              font-size="20"
+              font-weight="700"
+              letter-spacing="-0.8"
+            >
+              CareBridge
+            </text>
+          </svg>
+        </a>
+        <button
+          class="nav-back c-btn c-btn-text c-btn-with-icon ds-body-sm ds-text-semibold ds-text-default"
+          type="button"
+        >
+          <i class="fa-solid fa-angle-left u-icon-xs"></i>
+          Back
+        </button>
+
+        <ul class="nav-list u-gap-32">
+          <li class="nav-item">
+            <button
+              class="nav-trigger nav-trigger-products c-btn c-btn-nav c-btn-with-icon ds-body-sm ds-text-semibold ds-text-default"
+              type="button"
+              aria-expanded="false"
+              aria-controls="products-menu"
+            >
+              Products
+              <i
+                class="nav-trigger-icon fa-solid fa-chevron-down ds-accent-strong u-icon-xs"
+              ></i>
+            </button>
+          </li>
+
+          <li class="nav-item">
+            <button
+              class="nav-trigger nav-trigger-solutions c-btn c-btn-nav c-btn-with-icon ds-body-sm ds-text-semibold ds-text-default"
+              type="button"
+              aria-expanded="false"
+              aria-controls="solutions-menu"
+            >
+              Solutions
+              <i
+                class="nav-trigger-icon fa-solid fa-chevron-down ds-accent-strong u-icon-xs"
+              ></i>
+            </button>
+          </li>
+
+          <li class="nav-item">
+            <button
+              class="nav-trigger nav-trigger-developers c-btn c-btn-nav c-btn-with-icon ds-body-sm ds-text-semibold ds-text-default"
+              type="button"
+              aria-expanded="false"
+              aria-controls="developers-menu"
+            >
+              Developers
+              <i
+                class="nav-trigger-icon fa-solid fa-chevron-down ds-accent-strong u-icon-xs"
+              ></i>
+            </button>
+          </li>
+
+          <li class="nav-item">
+            <button
+              class="nav-trigger nav-trigger-resources c-btn c-btn-nav c-btn-with-icon ds-body-sm ds-text-semibold ds-text-default"
+              type="button"
+              aria-expanded="false"
+              aria-controls="resources-menu"
+            >
+              Resources
+              <i
+                class="nav-trigger-icon fa-solid fa-chevron-down ds-accent-strong u-icon-xs"
+              ></i>
+            </button>
+          </li>
+
+          <li class="nav-item">
+            <a
+              class="nav-link ds-body-sm ds-text-semibold ds-text-default"
+              href="#"
+              >Pricing</a
+            >
+          </li>
+        </ul>
+
+        <ul class="nav-actions u-gap-8">
+          <li>
+            <a
+              class="nav-action-secondary c-btn c-btn-outline ds-body-sm ds-text-semibold"
+              href="#"
+              >Sign in</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-action-primary c-btn c-btn-brand c-btn-with-icon ds-body-sm ds-text-semibold"
+              href="#"
+              >Request demo
+              <span class="action-icon" aria-hidden="true">
+                <svg
+                  class="action-arrow"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="action-arrow-line"
+                    d="M3 8H10"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+
+                  <path
+                    class="action-arrow-head"
+                    d="M7 4L11 8L7 12"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            </a>
+          </li>
+          <li class="nav-hamburger">
+            <button
+              class="nav-hamburger-button c-btn c-btn-brand-soft c-btn-icon-only c-btn-box"
+              type="button"
+              aria-label="Open navigation menu"
+              aria-expanded="false"
+              aria-controls="nav-menu-panel"
+            >
+              <svg
+                class="nav-hamburger-icon"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="nav-hamburger-line nav-hamburger-line-top"
+                  d="M4 6H16"
+                  stroke="currentColor"
+                  stroke-width="1.75"
+                  stroke-linecap="round"
+                />
+
+                <path
+                  class="nav-hamburger-line nav-hamburger-line-middle"
+                  d="M4 10H16"
+                  stroke="currentColor"
+                  stroke-width="1.75"
+                  stroke-linecap="round"
+                />
+
+                <path
+                  class="nav-hamburger-line nav-hamburger-line-bottom"
+                  d="M4 14H16"
+                  stroke="currentColor"
+                  stroke-width="1.75"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+          </li>
+        </ul>
+        <div class="nav-menu-panel ds-surface-white" id="nav-menu-panel">
+          <ul class="mobile-nav-list ds-surface-white">
+            <li class="mobile-nav-item">
+              <button
+                class="mobile-nav-trigger mobile-nav-trigger-products c-btn c-btn-with-icon c-btn-wide ds-body-lg ds-text-default"
+                type="button"
+                aria-expanded="false"
+                aria-controls="products-menu"
+              >
+                Products
+
+                <i
+                  class="mobile-nav-icon fa-solid fa-angle-right ds-brand-strong u-icon-xs"
+                  aria-hidden="true"
+                ></i>
+              </button>
+            </li>
+
+            <li class="mobile-nav-item">
+              <button
+                class="mobile-nav-trigger mobile-nav-trigger-solutions c-btn c-btn-with-icon c-btn-wide ds-body-lg ds-text-default"
+                type="button"
+                aria-expanded="false"
+                aria-controls="solutions-menu"
+              >
+                Solutions
+
+                <i
+                  class="mobile-nav-icon fa-solid fa-angle-right ds-brand-strong u-icon-xs"
+                  aria-hidden="true"
+                ></i>
+              </button>
+            </li>
+
+            <li class="mobile-nav-item">
+              <button
+                class="mobile-nav-trigger mobile-nav-trigger-developers c-btn c-btn-with-icon c-btn-wide ds-body-lg ds-text-default"
+                type="button"
+                aria-expanded="false"
+                aria-controls="developers-menu"
+              >
+                Developers
+
+                <i
+                  class="mobile-nav-icon fa-solid fa-angle-right ds-brand-strong u-icon-xs"
+                  aria-hidden="true"
+                ></i>
+              </button>
+            </li>
+
+            <li class="mobile-nav-item">
+              <button
+                class="mobile-nav-trigger mobile-nav-trigger-resources c-btn c-btn-with-icon c-btn-wide ds-body-lg ds-text-default"
+                type="button"
+                aria-expanded="false"
+                aria-controls="resources-menu"
+              >
+                Resources
+
+                <i
+                  class="mobile-nav-icon fa-solid fa-angle-right ds-brand-strong u-icon-xs"
+                  aria-hidden="true"
+                ></i>
+              </button>
+            </li>
+
+            <li class="mobile-nav-item">
+              <a
+                class="mobile-nav-link c-btn c-btn-wide ds-body-lg ds-text-default"
+                href="#"
+              >
+                Pricing
+              </a>
+            </li>
+
+            <li class="mobile-nav-item">
+              <a
+                class="mobile-nav-link c-btn c-btn-wide ds-body-lg ds-text-default"
+                href="#"
+              >
+                Sign in
+              </a>
+            </li>
+          </ul>
+          <div class="mobile-nav-actions-container">
+            <ul class="mobile-nav-actions u-gap-8">
+              <li>
+                <a
+                  class="nav-action-primary c-btn c-btn-brand c-btn-with-icon ds-body-sm ds-text-semibold"
+                  href="#"
+                >
+                  Start now
+                  <span class="action-icon" aria-hidden="true">
+                    <svg
+                      class="action-arrow"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="action-arrow-line"
+                        d="M3 8H10"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        class="action-arrow-head"
+                        d="M7 4L11 8L7 12"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="nav-action-secondary c-btn c-btn-outline ds-body-sm ds-text-semibold"
+                  href="#"
+                >
+                  Contact sales
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="mega-menu mega-menu-products ds-surface-white"
+            id="products-menu"
+            aria-label="Products"
+          >
+            <div class="mega-menu-main u-pad-32 u-gap-32">
+              <section class="menu-group u-gap-16">
+                <h2 class="menu-group-title ds-body-sm ds-text-default">
+                  Patient Access
+                </h2>
+
+                <ul class="menu-list u-gap-16">
+                  <li>
+                    <a
+                      class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default"
+                      href="#"
+                    >
+                      <span class="menu-link-title u-gap-4"
+                        >Online Scheduling
+                        <i
+                          class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                        ></i
+                      ></span>
+                      <p
+                        class="menu-link-description ds-text-regular ds-text-muted"
+                      >
+                        Book visits across locations
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default"
+                      href="#"
+                    >
+                      <span class="menu-link-title u-gap-4"
+                        >Digital Intake
+                        <i
+                          class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                        ></i
+                      ></span>
+                      <p
+                        class="menu-link-description ds-text-regular ds-text-muted"
+                      >
+                        Collect forms and consent
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default"
+                      href="#"
+                    >
+                      <span class="menu-link-title u-gap-4"
+                        >Patient Portal
+                        <i
+                          class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                        ></i
+                      ></span>
+                      <p
+                        class="menu-link-description ds-text-regular ds-text-muted"
+                      >
+                        Access records and care plans
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default"
+                      href="#"
+                    >
+                      <span class="menu-link-title u-gap-4"
+                        >Referral Intake
+                        <i
+                          class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                        ></i
+                      ></span>
+                      <p
+                        class="menu-link-description ds-text-regular ds-text-muted"
+                      >
+                        Triage inbound referrals
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default"
+                      href="#"
+                    >
+                      <span class="menu-link-title u-gap-4"
+                        >Waitlist Management
+                        <i
+                          class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                        ></i
+                      ></span>
+                      <p
+                        class="menu-link-description ds-text-regular ds-text-muted"
+                      >
+                        Fill cancelled appointments
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default"
+                      href="#"
+                    >
+                      <span class="menu-link-title u-gap-4"
+                        >Patient Notifications
+                        <i
+                          class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                        ></i
+                      ></span>
+                      <p
+                        class="menu-link-description ds-text-regular ds-text-muted"
+                      >
+                        Send reminders and updates
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default"
+                      href="#"
+                    >
+                      <span class="menu-link-title u-gap-4"
+                        >Virtual Care
+                        <i
+                          class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                        ></i
+                      ></span>
+                      <p
+                        class="menu-link-description ds-text-regular ds-text-muted"
+                      >
+                        Support virtual follow-ups
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+              </section>
+
+              <section class="menu-group u-gap-16">
+                <h2 class="menu-group-title ds-body-sm ds-text-default">
+                  Clinical Operations
+                </h2>
+
+                <ul class="menu-list u-gap-16">
+                  <li>
+                    <a
+                      class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default"
+                      href="#"
+                    >
+                      <span class="menu-link-title u-gap-4"
+                        >Care Coordination
+                        <i
+                          class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                        ></i
+                      ></span>
+                      <p
+                        class="menu-link-description ds-text-regular ds-text-muted"
+                      >
+                        Support virtual follow-ups
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default"
+                      href="#"
+                    >
+                      <span class="menu-link-title u-gap-4"
+                        >Provider Scheduling
+                        <i
+                          class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                        ></i
+                      ></span>
+                      <p
+                        class="menu-link-description ds-text-regular ds-text-muted"
+                      >
+                        Manage provider availability
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default"
+                      href="#"
+                    >
+                      <span class="menu-link-title u-gap-4"
+                        >Clinical Messaging
+                        <i
+                          class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                        ></i
+                      ></span>
+                      <p
+                        class="menu-link-description ds-text-regular ds-text-muted"
+                      >
+                        Message care teams securely
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default"
+                      href="#"
+                    >
+                      <span class="menu-link-title u-gap-4"
+                        >Task Management
+                        <i
+                          class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                        ></i
+                      ></span>
+                      <p
+                        class="menu-link-description ds-text-regular ds-text-muted"
+                      >
+                        Track follow-ups and handoffs
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default"
+                      href="#"
+                    >
+                      <span class="menu-link-title u-gap-4"
+                        >Discharge Planning
+                        <i
+                          class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                        ></i
+                      ></span>
+                      <p
+                        class="menu-link-description ds-text-regular ds-text-muted"
+                      >
+                        Plan care transitions
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default"
+                      href="#"
+                    >
+                      <span class="menu-link-title u-gap-4"
+                        >Population Health
+                        <i
+                          class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                        ></i
+                      ></span>
+                      <p
+                        class="menu-link-description ds-text-regular ds-text-muted"
+                      >
+                        Identify care gaps
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default"
+                      href="#"
+                    >
+                      <span class="menu-link-title u-gap-4"
+                        >Quality Measures
+                        <i
+                          class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                        ></i
+                      ></span>
+                      <p
+                        class="menu-link-description ds-text-regular ds-text-muted"
+                      >
+                        Track quality outcomes
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+              </section>
+
+              <section class="menu-group u-gap-16">
+                <h2 class="menu-group-title ds-body-sm ds-text-default">
+                  Revenue Cycle
+                </h2>
+
+                <ul class="menu-list u-gap-16">
+                  <li>
+                    <a
+                      class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default"
+                      href="#"
+                    >
+                      <span class="menu-link-title u-gap-4"
+                        >Eligibility Verification
+                        <i
+                          class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                        ></i
+                      ></span>
+                      <p
+                        class="menu-link-description ds-text-regular ds-text-muted"
+                      >
+                        Confirm patient coverage
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default"
+                      href="#"
+                    >
+                      <span class="menu-link-title u-gap-4"
+                        >Claims Management
+                        <i
+                          class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                        ></i
+                      ></span>
+                      <p
+                        class="menu-link-description ds-text-regular ds-text-muted"
+                      >
+                        Track claims and denials
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default"
+                      href="#"
+                    >
+                      <span class="menu-link-title u-gap-4"
+                        >Billing Automation
+                        <i
+                          class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                        ></i
+                      ></span>
+                      <p
+                        class="menu-link-description ds-text-regular ds-text-muted"
+                      >
+                        Automate billing tasks
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default"
+                      href="#"
+                    >
+                      <span class="menu-link-title u-gap-4"
+                        >Prior Authorization
+                        <i
+                          class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                        ></i
+                      ></span>
+                      <p
+                        class="menu-link-description ds-text-regular ds-text-muted"
+                      >
+                        Manage required approvals
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default"
+                      href="#"
+                    >
+                      <span class="menu-link-title u-gap-4"
+                        >Payment Collection
+                        <i
+                          class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                        ></i
+                      ></span>
+                      <p
+                        class="menu-link-description ds-text-regular ds-text-muted"
+                      >
+                        Collect patient balances
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default"
+                      href="#"
+                    >
+                      <span class="menu-link-title u-gap-4"
+                        >Financial Reporting
+                        <i
+                          class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                        ></i
+                      ></span>
+                      <p
+                        class="menu-link-description ds-text-regular ds-text-muted"
+                      >
+                        Report revenue trends
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+              </section>
+
+              <section class="menu-group u-gap-16">
+                <h2 class="menu-group-title ds-body-sm ds-text-default">
+                  Data & Platform
+                </h2>
+
+                <ul class="menu-list u-gap-16">
+                  <li>
+                    <a
+                      class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default"
+                      href="#"
+                    >
+                      <span class="menu-link-title u-gap-4"
+                        >Integration Hub
+                        <i
+                          class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                        ></i
+                      ></span>
+                      <p
+                        class="menu-link-description ds-text-regular ds-text-muted"
+                      >
+                        Connect healthcare systems
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default"
+                      href="#"
+                    >
+                      <span class="menu-link-title u-gap-4"
+                        >Data Exchange
+                        <i
+                          class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                        ></i
+                      ></span>
+                      <p
+                        class="menu-link-description ds-text-regular ds-text-muted"
+                      >
+                        Exchange clinical data
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default"
+                      href="#"
+                    >
+                      <span class="menu-link-title u-gap-4"
+                        >Identity & Access
+                        <i
+                          class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                        ></i
+                      ></span>
+                      <p
+                        class="menu-link-description ds-text-regular ds-text-muted"
+                      >
+                        Manage roles and access
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default"
+                      href="#"
+                    >
+                      <span class="menu-link-title u-gap-4"
+                        >Audit Logs
+                        <i
+                          class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                        ></i
+                      ></span>
+                      <p
+                        class="menu-link-description ds-text-regular ds-text-muted"
+                      >
+                        Track system activity
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default"
+                      href="#"
+                    >
+                      <span class="menu-link-title u-gap-4"
+                        >Compliance Center
+                        <i
+                          class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                        ></i
+                      ></span>
+                      <p
+                        class="menu-link-description ds-text-regular ds-text-muted"
+                      >
+                        Support privacy controls
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default"
+                      href="#"
+                    >
+                      <span class="menu-link-title u-gap-4"
+                        >Analytics Workspace
+                        <i
+                          class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                        ></i
+                      ></span>
+                      <p
+                        class="menu-link-description ds-text-regular ds-text-muted"
+                      >
+                        Build operational reports
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+              </section>
+            </div>
+
+            <aside
+              class="mega-menu-rail u-pad-32 u-gap-32"
+              aria-label="More product resources"
+            >
+              <section class="menu-group u-gap-16">
+                <h2 class="menu-group-title ds-body-sm ds-text-default">
+                  More
+                </h2>
+
+                <ul class="menu-list u-gap-16">
+                  <li>
+                    <a
+                      class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default"
+                      href="#"
+                    >
+                      <span class="menu-link-title u-gap-4"
+                        >Product Roadmap
+                        <i
+                          class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                        ></i
+                      ></span>
+                      <p
+                        class="menu-link-description ds-text-regular ds-text-muted"
+                      >
+                        See what is next
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default"
+                      href="#"
+                    >
+                      <span class="menu-link-title u-gap-4"
+                        >Security Overview
+                        <i
+                          class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                        ></i
+                      ></span>
+                      <p
+                        class="menu-link-description ds-text-regular ds-text-muted"
+                      >
+                        Review security controls
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default"
+                      href="#"
+                    >
+                      <span class="menu-link-title u-gap-4"
+                        >Implementation Services
+                        <i
+                          class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                        ></i
+                      ></span>
+                      <p
+                        class="menu-link-description ds-text-regular ds-text-muted"
+                      >
+                        Plan your rollout
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default"
+                      href="#"
+                    >
+                      <span class="menu-link-title u-gap-4"
+                        >Interoperability
+                        <i
+                          class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                        ></i
+                      ></span>
+                      <p
+                        class="menu-link-description ds-text-regular ds-text-muted"
+                      >
+                        Connect existing systems
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+              </section>
+
+              <article class="menu-card ds-surface-white ds-border-soft">
+                <div class="menu-card-media">
+                  <img src="assets/healthcare-operations-report.png" alt="" />
+                </div>
+                <div class="menu-card-body u-pad-16 u-gap-16">
+                  <div class="menu-card-meta">
+                    <h3
+                      class="menu-card-title ds-body-sm ds-text-semibold ds-text-default"
+                    >
+                      Healthcare Operations Report
+                    </h3>
+                    <p class="menu-card-description ds-body-sm ds-text-muted">
+                      Reduce admin work across access, billing, and care
+                      workflows.
+                    </p>
+                  </div>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Read report
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </div>
+              </article>
+            </aside>
+          </div>
+
+          <div
+            class="mega-menu mega-menu-standard ds-surface-white u-pad-32 u-gap-32"
+            id="solutions-menu"
+            aria-label="Solutions"
+          >
+            <section class="menu-group u-gap-16">
+              <h2 class="menu-group-title ds-body-sm ds-text-default">
+                By organization
+              </h2>
+
+              <ul class="menu-list u-gap-16">
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Health systems
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Hospitals
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Community clinics
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Private practices
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Specialty networks
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Virtual care providers
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Public health agencies
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+              </ul>
+            </section>
+
+            <section class="menu-group u-gap-16">
+              <h2 class="menu-group-title ds-body-sm ds-text-default">
+                By use case
+              </h2>
+
+              <ul class="menu-list u-gap-16">
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Patient access
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Digital front door
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Care coordination
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Referral management
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Revenue cycle operations
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Provider capacity planning
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Population health programs
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Administrative automation
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+              </ul>
+            </section>
+
+            <section class="menu-group u-gap-16">
+              <h2 class="menu-group-title ds-body-sm ds-text-default">
+                By specialty
+              </h2>
+
+              <ul class="menu-list u-gap-16">
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Primary care
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Mental health
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Cardiology
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Orthopedics
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Oncology
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Pediatrics
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Diagnostics
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Home care
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+              </ul>
+            </section>
+
+            <section class="menu-group u-gap-16">
+              <h2 class="menu-group-title ds-body-sm ds-text-default">
+                Ecosystem
+              </h2>
+
+              <ul class="menu-list u-gap-16">
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Technology partners
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >EHR integrations
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Billing partners
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Implementation partners
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Marketplace
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+              </ul>
+            </section>
+          </div>
+
+          <div
+            class="mega-menu mega-menu-standard ds-surface-white u-pad-32 u-gap-32"
+            id="developers-menu"
+            aria-label="Developers"
+          >
+            <section class="menu-group u-gap-16">
+              <h2 class="menu-group-title ds-body-sm ds-text-default">
+                Documentation
+              </h2>
+
+              <ul class="menu-list u-gap-16">
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >CareBridge docs
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >API reference
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Authentication
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Webhooks
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >FHIR resources
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >HL7 interfaces
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >SDKs and libraries
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+              </ul>
+            </section>
+
+            <section class="menu-group u-gap-16">
+              <h2 class="menu-group-title ds-body-sm ds-text-default">
+                Integration guides
+              </h2>
+
+              <ul class="menu-list u-gap-16">
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Connect an EHR
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Sync patient records
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Build scheduling flows
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Automate intake forms
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Configure SSO
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Send patient notifications
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Export analytics data
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+              </ul>
+            </section>
+
+            <section class="menu-group u-gap-16">
+              <h2 class="menu-group-title ds-body-sm ds-text-default">
+                Resources
+              </h2>
+
+              <ul class="menu-list u-gap-16">
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Code samples
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Sandbox environment
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Release notes
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Developer blog
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >API status
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Security practices
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+              </ul>
+            </section>
+          </div>
+
+          <div
+            class="mega-menu mega-menu-standard ds-surface-white u-pad-32 u-gap-32"
+            id="resources-menu"
+            aria-label="Resources"
+          >
+            <section class="menu-group u-gap-16">
+              <h2 class="menu-group-title ds-body-sm ds-text-default">Learn</h2>
+
+              <ul class="menu-list u-gap-16">
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Blog
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Customer stories
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Guides
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Reports
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Webinars
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Healthcare glossary
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+              </ul>
+            </section>
+
+            <section class="menu-group u-gap-16">
+              <h2 class="menu-group-title ds-body-sm ds-text-default">
+                Support
+              </h2>
+
+              <ul class="menu-list u-gap-16">
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Help center
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Get support
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Implementation support
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Training resources
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Customer success
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >System status
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+              </ul>
+            </section>
+
+            <section class="menu-group u-gap-16">
+              <h2 class="menu-group-title ds-body-sm ds-text-default">
+                Company
+              </h2>
+
+              <ul class="menu-list u-gap-16">
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >About CareBridge
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Careers
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Newsroom
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Product roadmap
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Events
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Trust center
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+              </ul>
+            </section>
+
+            <section class="menu-group u-gap-16">
+              <h2 class="menu-group-title ds-body-sm ds-text-default">
+                Contact
+              </h2>
+
+              <ul class="menu-list u-gap-16">
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Contact sales
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Become a partner
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Talk to support
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="menu-link c-btn c-btn-text ds-body-sm ds-text-semibold ds-brand-default u-gap-4"
+                    href="#"
+                    >Request implementation help
+                    <i
+                      class="menu-link-icon fa-solid fa-arrow-right ds-brand-strong u-icon-xs"
+                    ></i
+                  ></a>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="site-main">
+      <section class="hero-section-container">
+        <section class="hero u-pad-32 u-gap-32" aria-labelledby="hero-title">
+          <dotlottie-wc
+            class="hero-lottie-bg"
+            src="assets/hero-background-animation.lottie"
+            speed="1"
+            loop
+            autoplay
+          ></dotlottie-wc>
+          <div class="hero-shell">
+            <div class="hero-content">
+              <p class="hero-eyebrow ds-body-sm ds-text-default">
+                Patient access running on CareBridge:
+                <span class="hero-eyebrow-metric ds-body-sm ds-text-subtle">
+                  24,000+ appointments coordinated
+                </span>
+              </p>
+              <h1
+                class="hero-title ds-display-lg ds-text-regular ds-text-default"
+                id="hero-title"
+              >
+                Healthcare infrastructure to improve patient access.
+                <span class="hero-subtitle ds-text-subtle"
+                  >Coordinate scheduling, intake, referrals, billing workflows,
+                  and care communication from a single connected platform.</span
+                >
+              </h1>
+              <div
+                class="hero-actions u-gap-8"
+                aria-label="Primary calls to action"
+              >
+                <a
+                  class="hero-action-primary c-btn c-btn-brand c-btn-with-icon ds-body ds-text-semibold"
+                  href="#"
+                >
+                  Get started
+                  <span class="action-icon" aria-hidden="true">
+                    <svg
+                      class="action-arrow"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="action-arrow-line"
+                        d="M3 8H10"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        class="action-arrow-head"
+                        d="M7 4L11 8L7 12"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </a>
+                <a
+                  class="hero-action-secondary c-btn c-btn-outline ds-body ds-text-semibold"
+                  href="#"
+                >
+                  Explore platform
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="hero-logo-container">
+          <div
+            class="hero-logo-strip u-gap-32"
+            aria-label="Healthcare teams using CareBridge"
+          >
+            <ul class="hero-logo-list u-gap-32" aria-hidden="true">
+              <li class="hero-logo-item">
+                <svg
+                  class="hero-logo"
+                  width="172"
+                  height="48"
+                  viewBox="0 0 168 48"
+                  fill="none"
+                  role="img"
+                  aria-label="Northstar Health"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M24 8L28.6 19.4L40 24L28.6 28.6L24 40L19.4 28.6L8 24L19.4 19.4L24 8Z"
+                    fill="#1F762A"
+                  />
+                  <path
+                    d="M24 16L26.2 21.8L32 24L26.2 26.2L24 32L21.8 26.2L16 24L21.8 21.8L24 16Z"
+                    fill="#90E59A"
+                  />
+                  <text
+                    x="52"
+                    y="29"
+                    fill="#17181A"
+                    font-family="Roboto, Arial, sans-serif"
+                    font-size="16"
+                    font-weight="700"
+                  >
+                    Northstar
+                  </text>
+                </svg>
+              </li>
+              <li class="hero-logo-item">
+                <svg
+                  class="hero-logo"
+                  width="172"
+                  height="48"
+                  viewBox="0 0 148 48"
+                  fill="none"
+                  role="img"
+                  aria-label="MapleCare"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M24 7L28 17H38L30 23L33 34L24 28L15 34L18 23L10 17H20L24 7Z"
+                    fill="#D62828"
+                  />
+                  <path d="M23 25H25V39H23V25Z" fill="#1A4D22" />
+                  <text
+                    x="48"
+                    y="29"
+                    fill="#17181A"
+                    font-family="Roboto, Arial, sans-serif"
+                    font-size="16"
+                    font-weight="700"
+                  >
+                    MapleCare
+                  </text>
+                </svg>
+              </li>
+              <li class="hero-logo-item">
+                <svg
+                  class="hero-logo"
+                  width="172"
+                  height="48"
+                  viewBox="0 0 136 48"
+                  fill="none"
+                  role="img"
+                  aria-label="WellPath"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="24" cy="24" r="15" fill="#DFF9E1" />
+                  <path
+                    d="M13 25C17 19 21 19 25 25C29 31 33 31 37 25"
+                    stroke="#1F762A"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                  />
+                  <text
+                    x="48"
+                    y="29"
+                    fill="#17181A"
+                    font-family="Roboto, Arial, sans-serif"
+                    font-size="16"
+                    font-weight="700"
+                  >
+                    WellPath
+                  </text>
+                </svg>
+              </li>
+              <li class="hero-logo-item">
+                <svg
+                  class="hero-logo"
+                  width="172"
+                  height="48"
+                  viewBox="0 0 172 48"
+                  fill="none"
+                  role="img"
+                  aria-label="Horizon Clinics"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9 29C13 20 18 16 24 16C30 16 35 20 39 29"
+                    stroke="#CC5D02"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M12 30H36"
+                    stroke="#1F762A"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                  />
+                  <text
+                    x="52"
+                    y="29"
+                    fill="#17181A"
+                    font-family="Roboto, Arial, sans-serif"
+                    font-size="16"
+                    font-weight="700"
+                  >
+                    Horizon Clinics
+                  </text>
+                </svg>
+              </li>
+              <li class="hero-logo-item">
+                <svg
+                  class="hero-logo"
+                  width="172"
+                  height="48"
+                  viewBox="0 0 138 48"
+                  fill="none"
+                  role="img"
+                  aria-label="CarePoint"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="24" cy="24" r="16" fill="#1F762A" />
+                  <circle cx="24" cy="24" r="7" fill="#FFFFFF" />
+                  <circle cx="24" cy="24" r="3" fill="#90E59A" />
+                  <text
+                    x="48"
+                    y="29"
+                    fill="#17181A"
+                    font-family="Roboto, Arial, sans-serif"
+                    font-size="16"
+                    font-weight="700"
+                  >
+                    CarePoint
+                  </text>
+                </svg>
+              </li>
+              <li class="hero-logo-item">
+                <svg
+                  class="hero-logo"
+                  width="172"
+                  height="48"
+                  viewBox="0 0 150 48"
+                  fill="none"
+                  role="img"
+                  aria-label="MedBridge"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10 29C14 20 20 16 24 24C28 32 34 28 38 19"
+                    stroke="#1F762A"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M15 34H33"
+                    stroke="#71747A"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                  />
+                  <text
+                    x="50"
+                    y="29"
+                    fill="#17181A"
+                    font-family="Roboto, Arial, sans-serif"
+                    font-size="16"
+                    font-weight="700"
+                  >
+                    MedBridge
+                  </text>
+                </svg>
+              </li>
+              <li class="hero-logo-item">
+                <svg
+                  class="hero-logo"
+                  width="172"
+                  height="48"
+                  viewBox="0 0 148 48"
+                  fill="none"
+                  role="img"
+                  aria-label="Pulseway"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9 25H16L20 16L27 34L32 24H39"
+                    stroke="#2563EB"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <circle cx="24" cy="24" r="17" fill="#DBEAFE" />
+                  <path
+                    d="M9 25H16L20 16L27 34L32 24H39"
+                    stroke="#2563EB"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <text
+                    x="52"
+                    y="29"
+                    fill="#17181A"
+                    font-family="Roboto, Arial, sans-serif"
+                    font-size="16"
+                    font-weight="700"
+                  >
+                    Pulseway
+                  </text>
+                </svg>
+              </li>
+              <li class="hero-logo-item">
+                <svg
+                  class="hero-logo"
+                  width="172"
+                  height="48"
+                  viewBox="0 0 156 48"
+                  fill="none"
+                  role="img"
+                  aria-label="Clearwell"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="9"
+                    y="12"
+                    width="30"
+                    height="24"
+                    rx="8"
+                    fill="#ECFEFF"
+                  />
+                  <path
+                    d="M17 25L22 30L32 18"
+                    stroke="#0891B2"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <text
+                    x="52"
+                    y="29"
+                    fill="#17181A"
+                    font-family="Roboto, Arial, sans-serif"
+                    font-size="16"
+                    font-weight="700"
+                  >
+                    Clearwell
+                  </text>
+                </svg>
+              </li>
+              <li class="hero-logo-item">
+                <svg
+                  class="hero-logo"
+                  width="172"
+                  height="48"
+                  viewBox="0 0 164 48"
+                  fill="none"
+                  role="img"
+                  aria-label="VitalLoop"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="20"
+                    cy="24"
+                    r="11"
+                    stroke="#7C3AED"
+                    stroke-width="3"
+                  />
+                  <circle
+                    cx="31"
+                    cy="24"
+                    r="11"
+                    stroke="#F97316"
+                    stroke-width="3"
+                  />
+                  <path
+                    d="M20 18V30M14 24H26"
+                    stroke="#7C3AED"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                  />
+                  <text
+                    x="52"
+                    y="29"
+                    fill="#17181A"
+                    font-family="Roboto, Arial, sans-serif"
+                    font-size="16"
+                    font-weight="700"
+                  >
+                    VitalLoop
+                  </text>
+                </svg>
+              </li>
+              <li class="hero-logo-item">
+                <svg
+                  class="hero-logo"
+                  width="172"
+                  height="48"
+                  viewBox="0 0 152 48"
+                  fill="none"
+                  role="img"
+                  aria-label="Kindred"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M24 36C16 30 10 25 10 18C10 13 14 10 18 10C21 10 23 12 24 14C25 12 27 10 30 10C34 10 38 13 38 18C38 25 32 30 24 36Z"
+                    fill="#F43F5E"
+                  />
+                  <path
+                    d="M24 17V27M19 22H29"
+                    stroke="#FFFFFF"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                  />
+                  <text
+                    x="52"
+                    y="29"
+                    fill="#17181A"
+                    font-family="Roboto, Arial, sans-serif"
+                    font-size="16"
+                    font-weight="700"
+                  >
+                    Kindred
+                  </text>
+                </svg>
+              </li>
+              <li class="hero-logo-item">
+                <svg
+                  class="hero-logo"
+                  width="172"
+                  height="48"
+                  viewBox="0 0 166 48"
+                  fill="none"
+                  role="img"
+                  aria-label="AsterCare"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="24" cy="24" r="15" fill="#FEF3C7" />
+                  <path
+                    d="M24 11V37M11 24H37M15 15L33 33M33 15L15 33"
+                    stroke="#D97706"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                  />
+                  <circle cx="24" cy="24" r="4" fill="#1F762A" />
+                  <text
+                    x="52"
+                    y="29"
+                    fill="#17181A"
+                    font-family="Roboto, Arial, sans-serif"
+                    font-size="16"
+                    font-weight="700"
+                  >
+                    AsterCare
+                  </text>
+                </svg>
+              </li>
+            </ul>
+            <ul class="hero-logo-list u-gap-32" aria-hidden="true">
+              <li class="hero-logo-item">
+                <svg
+                  class="hero-logo"
+                  width="172"
+                  height="48"
+                  viewBox="0 0 168 48"
+                  fill="none"
+                  role="img"
+                  aria-label="Northstar Health"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M24 8L28.6 19.4L40 24L28.6 28.6L24 40L19.4 28.6L8 24L19.4 19.4L24 8Z"
+                    fill="#1F762A"
+                  />
+                  <path
+                    d="M24 16L26.2 21.8L32 24L26.2 26.2L24 32L21.8 26.2L16 24L21.8 21.8L24 16Z"
+                    fill="#90E59A"
+                  />
+                  <text
+                    x="52"
+                    y="29"
+                    fill="#17181A"
+                    font-family="Roboto, Arial, sans-serif"
+                    font-size="16"
+                    font-weight="700"
+                  >
+                    Northstar
+                  </text>
+                </svg>
+              </li>
+              <li class="hero-logo-item">
+                <svg
+                  class="hero-logo"
+                  width="172"
+                  height="48"
+                  viewBox="0 0 148 48"
+                  fill="none"
+                  role="img"
+                  aria-label="MapleCare"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M24 7L28 17H38L30 23L33 34L24 28L15 34L18 23L10 17H20L24 7Z"
+                    fill="#D62828"
+                  />
+                  <path d="M23 25H25V39H23V25Z" fill="#1A4D22" />
+                  <text
+                    x="48"
+                    y="29"
+                    fill="#17181A"
+                    font-family="Roboto, Arial, sans-serif"
+                    font-size="16"
+                    font-weight="700"
+                  >
+                    MapleCare
+                  </text>
+                </svg>
+              </li>
+              <li class="hero-logo-item">
+                <svg
+                  class="hero-logo"
+                  width="172"
+                  height="48"
+                  viewBox="0 0 136 48"
+                  fill="none"
+                  role="img"
+                  aria-label="WellPath"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="24" cy="24" r="15" fill="#DFF9E1" />
+                  <path
+                    d="M13 25C17 19 21 19 25 25C29 31 33 31 37 25"
+                    stroke="#1F762A"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                  />
+                  <text
+                    x="48"
+                    y="29"
+                    fill="#17181A"
+                    font-family="Roboto, Arial, sans-serif"
+                    font-size="16"
+                    font-weight="700"
+                  >
+                    WellPath
+                  </text>
+                </svg>
+              </li>
+              <li class="hero-logo-item">
+                <svg
+                  class="hero-logo"
+                  width="172"
+                  height="48"
+                  viewBox="0 0 172 48"
+                  fill="none"
+                  role="img"
+                  aria-label="Horizon Clinics"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9 29C13 20 18 16 24 16C30 16 35 20 39 29"
+                    stroke="#CC5D02"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M12 30H36"
+                    stroke="#1F762A"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                  />
+                  <text
+                    x="52"
+                    y="29"
+                    fill="#17181A"
+                    font-family="Roboto, Arial, sans-serif"
+                    font-size="16"
+                    font-weight="700"
+                  >
+                    Horizon Clinics
+                  </text>
+                </svg>
+              </li>
+              <li class="hero-logo-item">
+                <svg
+                  class="hero-logo"
+                  width="172"
+                  height="48"
+                  viewBox="0 0 138 48"
+                  fill="none"
+                  role="img"
+                  aria-label="CarePoint"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="24" cy="24" r="16" fill="#1F762A" />
+                  <circle cx="24" cy="24" r="7" fill="#FFFFFF" />
+                  <circle cx="24" cy="24" r="3" fill="#90E59A" />
+                  <text
+                    x="48"
+                    y="29"
+                    fill="#17181A"
+                    font-family="Roboto, Arial, sans-serif"
+                    font-size="16"
+                    font-weight="700"
+                  >
+                    CarePoint
+                  </text>
+                </svg>
+              </li>
+              <li class="hero-logo-item">
+                <svg
+                  class="hero-logo"
+                  width="172"
+                  height="48"
+                  viewBox="0 0 150 48"
+                  fill="none"
+                  role="img"
+                  aria-label="MedBridge"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10 29C14 20 20 16 24 24C28 32 34 28 38 19"
+                    stroke="#1F762A"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M15 34H33"
+                    stroke="#71747A"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                  />
+                  <text
+                    x="50"
+                    y="29"
+                    fill="#17181A"
+                    font-family="Roboto, Arial, sans-serif"
+                    font-size="16"
+                    font-weight="700"
+                  >
+                    MedBridge
+                  </text>
+                </svg>
+              </li>
+              <li class="hero-logo-item">
+                <svg
+                  class="hero-logo"
+                  width="172"
+                  height="48"
+                  viewBox="0 0 148 48"
+                  fill="none"
+                  role="img"
+                  aria-label="Pulseway"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9 25H16L20 16L27 34L32 24H39"
+                    stroke="#2563EB"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <circle cx="24" cy="24" r="17" fill="#DBEAFE" />
+                  <path
+                    d="M9 25H16L20 16L27 34L32 24H39"
+                    stroke="#2563EB"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <text
+                    x="52"
+                    y="29"
+                    fill="#17181A"
+                    font-family="Roboto, Arial, sans-serif"
+                    font-size="16"
+                    font-weight="700"
+                  >
+                    Pulseway
+                  </text>
+                </svg>
+              </li>
+              <li class="hero-logo-item">
+                <svg
+                  class="hero-logo"
+                  width="172"
+                  height="48"
+                  viewBox="0 0 156 48"
+                  fill="none"
+                  role="img"
+                  aria-label="Clearwell"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="9"
+                    y="12"
+                    width="30"
+                    height="24"
+                    rx="8"
+                    fill="#ECFEFF"
+                  />
+                  <path
+                    d="M17 25L22 30L32 18"
+                    stroke="#0891B2"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <text
+                    x="52"
+                    y="29"
+                    fill="#17181A"
+                    font-family="Roboto, Arial, sans-serif"
+                    font-size="16"
+                    font-weight="700"
+                  >
+                    Clearwell
+                  </text>
+                </svg>
+              </li>
+              <li class="hero-logo-item">
+                <svg
+                  class="hero-logo"
+                  width="172"
+                  height="48"
+                  viewBox="0 0 164 48"
+                  fill="none"
+                  role="img"
+                  aria-label="VitalLoop"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="20"
+                    cy="24"
+                    r="11"
+                    stroke="#7C3AED"
+                    stroke-width="3"
+                  />
+                  <circle
+                    cx="31"
+                    cy="24"
+                    r="11"
+                    stroke="#F97316"
+                    stroke-width="3"
+                  />
+                  <path
+                    d="M20 18V30M14 24H26"
+                    stroke="#7C3AED"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                  />
+                  <text
+                    x="52"
+                    y="29"
+                    fill="#17181A"
+                    font-family="Roboto, Arial, sans-serif"
+                    font-size="16"
+                    font-weight="700"
+                  >
+                    VitalLoop
+                  </text>
+                </svg>
+              </li>
+              <li class="hero-logo-item">
+                <svg
+                  class="hero-logo"
+                  width="172"
+                  height="48"
+                  viewBox="0 0 152 48"
+                  fill="none"
+                  role="img"
+                  aria-label="Kindred"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M24 36C16 30 10 25 10 18C10 13 14 10 18 10C21 10 23 12 24 14C25 12 27 10 30 10C34 10 38 13 38 18C38 25 32 30 24 36Z"
+                    fill="#F43F5E"
+                  />
+                  <path
+                    d="M24 17V27M19 22H29"
+                    stroke="#FFFFFF"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                  />
+                  <text
+                    x="52"
+                    y="29"
+                    fill="#17181A"
+                    font-family="Roboto, Arial, sans-serif"
+                    font-size="16"
+                    font-weight="700"
+                  >
+                    Kindred
+                  </text>
+                </svg>
+              </li>
+              <li class="hero-logo-item">
+                <svg
+                  class="hero-logo"
+                  width="172"
+                  height="48"
+                  viewBox="0 0 166 48"
+                  fill="none"
+                  role="img"
+                  aria-label="AsterCare"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="24" cy="24" r="15" fill="#FEF3C7" />
+                  <path
+                    d="M24 11V37M11 24H37M15 15L33 33M33 15L15 33"
+                    stroke="#D97706"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                  />
+                  <circle cx="24" cy="24" r="4" fill="#1F762A" />
+                  <text
+                    x="52"
+                    y="29"
+                    fill="#17181A"
+                    font-family="Roboto, Arial, sans-serif"
+                    font-size="16"
+                    font-weight="700"
+                  >
+                    AsterCare
+                  </text>
+                </svg>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
