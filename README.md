@@ -1,6 +1,6 @@
 # Exercise 29 — CareBridge Navigation (Stripe system recreation)
 
-[Live demo](https://vigneshsrinivasan-sys.github.io/exercise-29-carebridge-stripe-navigation/) · [Improved HTML source](index.html) · [Improved CSS source](styles.css) · [Original HTML](original/index.html) · [Original CSS](original/styles.css)
+[Live demo](https://vigneshsrinivasan-sys.github.io/exercise-29-carebridge-stripe-navigation/) · [Improved HTML source](index.html) · [Improved CSS source](styles.css) · [Original HTML](original/index.html) · [Original CSS](original/index.css) · [Stripe reference](https://stripe.com/)
 
 ## Before and after
 
@@ -11,6 +11,18 @@
 ### After — My version extends the course exercise with an expanded HTML/CSS interface.
 
 ![After — the CareBridge navigation system](preview.png)
+
+![CareBridge Products navigation reference](reference-images/carebridge-reference-01.png)
+
+![CareBridge Solutions navigation reference](reference-images/carebridge-reference-02.png)
+
+### Stripe reference
+
+![Stripe homepage reference](reference-images/stripe-reference-01.jpeg)
+
+![Stripe Products navigation reference](reference-images/stripe-reference-02.png)
+
+![Stripe Solutions navigation reference](reference-images/stripe-reference-03.png)
 
 ## Why this exercise exists
 
@@ -42,7 +54,7 @@ The improved version recreates the navigation architecture, spacing, surfaces, t
 - The current ARIA structure is included where practical, but static attributes such as `aria-expanded="false"` cannot be synchronized by CSS alone.
 - The local Lottie animation, healthcare report image, and supporting reference captures are kept in [`assets/`](assets/) and [`reference-images/`](reference-images/). Font Awesome and the LottieFiles web component remain external dependencies already used by the source.
 - For local development, serve the project through VS Code Live Server or another local HTTP server so the Lottie asset loads reliably; opening the file directly with `file://` is not the intended local setup. GitHub Pages provides the public live demo over HTTP.
-- The implementation source is preserved as completed; this repository adds packaging documentation and normalized relative paths only.
+- The implementation source is preserved as completed; this repository adds packaging documentation, the exact Colt comparison source, and reference captures.
 
 ## Sequence
 
