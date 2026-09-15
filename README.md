@@ -8,7 +8,7 @@
 
 ![Before — the original course responsive navbar](original.png)
 
-### After — My version, pushed far beyond the course requirement
+### After — My version extends the course exercise with an expanded HTML/CSS interface.
 
 ![After — the CareBridge navigation system](preview.png)
 
